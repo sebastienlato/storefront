@@ -1,0 +1,227 @@
+export type StoreIndex = {
+  defaultStoreId: string;
+  storeIds: string[];
+};
+
+export type NavItem = {
+  label: string;
+  href: string;
+};
+
+export type SocialLink = {
+  label: string;
+  href: string;
+  icon?: string;
+};
+
+export type Brand = {
+  name: string;
+  tagline?: string;
+  description?: string;
+  logoPath: string;
+  logoAlt?: string;
+};
+
+export type ThemeTokens = {
+  colors: {
+    background: string;
+    foreground: string;
+    muted: string;
+    accent: string;
+    accentMuted: string;
+    border: string;
+    surface: string;
+  };
+  typography: {
+    display: string;
+    body: string;
+  };
+  radii: {
+    sm: string;
+    md: string;
+    lg: string;
+    pill: string;
+  };
+  spacing: {
+    sectionY: string;
+    containerX: string;
+  };
+  shadows: {
+    sm: string;
+    md: string;
+    lg: string;
+  };
+};
+
+export type Navigation = {
+  header: NavItem[];
+  footer: NavItem[];
+  social?: SocialLink[];
+};
+
+export type TrustItem = {
+  title: string;
+  description: string;
+  icon?: string;
+};
+
+export type StoreConfig = {
+  id: string;
+  brand: Brand;
+  theme: ThemeTokens;
+  navigation: Navigation;
+  trust: TrustItem[];
+};
+
+export type CallToAction = {
+  label: string;
+  href: string;
+};
+
+export type HeroBlock = {
+  id: string;
+  type: "hero";
+  title: string;
+  subtitle?: string;
+  cta?: CallToAction;
+  image?: string;
+};
+
+export type FeatureGridBlock = {
+  id: string;
+  type: "feature-grid";
+  title?: string;
+  items: {
+    title: string;
+    description: string;
+  }[];
+};
+
+export type ImageStripBlock = {
+  id: string;
+  type: "image-strip";
+  title?: string;
+  images: {
+    src: string;
+    alt?: string;
+  }[];
+};
+
+export type TestimonialBlock = {
+  id: string;
+  type: "testimonials";
+  title?: string;
+  items: {
+    quote: string;
+    name: string;
+    role?: string;
+  }[];
+};
+
+export type RichTextBlock = {
+  id: string;
+  type: "rich-text";
+  title?: string;
+  paragraphs: string[];
+};
+
+export type ContactBlock = {
+  id: string;
+  type: "contact";
+  title?: string;
+  methods: {
+    label: string;
+    value: string;
+  }[];
+};
+
+export type ContentBlock =
+  | HeroBlock
+  | FeatureGridBlock
+  | ImageStripBlock
+  | TestimonialBlock
+  | RichTextBlock
+  | ContactBlock;
+
+export type ContentPage = {
+  seo: {
+    title: string;
+    description?: string;
+  };
+  blocks: ContentBlock[];
+};
+
+export type StoreContent = {
+  home: ContentPage;
+  about: ContentPage;
+  contact: ContentPage;
+};
+
+export type Price = {
+  current: number;
+  compareAt?: number;
+  currency: string;
+};
+
+export type Variant = {
+  id: string;
+  title: string;
+  options: {
+    name: string;
+    value: string;
+  }[];
+  sku?: string;
+  inStock?: boolean;
+  inventoryQty?: number;
+};
+
+export type Product = {
+  id: string;
+  handle: string;
+  title: string;
+  description: string;
+  images: string[];
+  price: Price;
+  variants: Variant[];
+  tags?: string[];
+  metadata?: {
+    seoTitle?: string;
+    seoDescription?: string;
+  };
+};
+
+export type Collection = {
+  id: string;
+  handle: string;
+  title: string;
+  description?: string;
+  image?: string;
+  productHandles: string[];
+};
+
+export type LegalContent = {
+  privacy: {
+    title: string;
+    updated: string;
+    sections: {
+      title: string;
+      body: string[];
+    }[];
+  };
+  terms: {
+    title: string;
+    updated: string;
+    sections: {
+      title: string;
+      body: string[];
+    }[];
+  };
+};
+
+export type StoreDataset = {
+  config: StoreConfig;
+  content: StoreContent;
+  products: Product[];
+  collections: Collection[];
+  legal: LegalContent;
+};
