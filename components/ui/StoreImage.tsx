@@ -1,10 +1,8 @@
 "use client";
 
-/* 
-  eslint-disable @next/next/no-img-element
-  We intentionally use <img> here to support reliable onError fallback
-  for dynamic, store-scoped assets. next/image is unsuitable for this use case.
-*/
+// We intentionally use <img> here for reliable onError fallback for store-scoped assets.
+// next/image is unsuitable for this use case since assets are dynamic per store.
+/* eslint-disable-next-line @next/next/no-img-element */
 
 import { useEffect, useState } from "react";
 
