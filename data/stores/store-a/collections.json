@@ -4,7 +4,7 @@
     "handle": "objects",
     "title": "Objects",
     "description": "Sculptural pieces and everyday forms for grounded interiors.",
-    "image": "/stores/store-a/images/collection-objects.jpg",
+    "image": "/stores/store-a/placeholder.jpg",
     "productHandles": ["meridian-vase", "horizon-tray"]
   },
   {
@@ -12,7 +12,7 @@
     "handle": "textiles",
     "title": "Textiles",
     "description": "Soft layers and tactile weaves in balanced, neutral tones.",
-    "image": "/stores/store-a/images/collection-textiles.jpg",
+    "image": "/stores/store-a/placeholder.jpg",
     "productHandles": ["lumen-throw"]
   }
 ]

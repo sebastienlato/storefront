@@ -23,7 +23,7 @@
           "label": "Explore the collection",
           "href": "/collections/objects"
         },
-        "image": "/stores/store-a/images/hero.jpg",
+        "image": "/stores/store-a/placeholder.jpg",
         "imageAlt": "Curated objects on a neutral surface"
       },
       {
@@ -67,9 +67,9 @@
         "type": "image-strip",
         "title": "Spaces for slow living",
         "images": [
-          { "src": "/stores/store-a/images/scene-1.jpg", "alt": "Sunlit table setting" },
-          { "src": "/stores/store-a/images/scene-2.jpg", "alt": "Textured throws in neutral tones" },
-          { "src": "/stores/store-a/images/scene-3.jpg", "alt": "Ceramic vessels on shelving" }
+          { "src": "/stores/store-a/placeholder.jpg", "alt": "Sunlit table setting" },
+          { "src": "/stores/store-a/placeholder.jpg", "alt": "Textured throws in neutral tones" },
+          { "src": "/stores/store-a/placeholder.jpg", "alt": "Ceramic vessels on shelving" }
         ]
       },
       {
@@ -98,7 +98,7 @@
           "label": "Shop new arrivals",
           "href": "/collections/objects"
         },
-        "image": "/stores/store-a/images/cta.jpg",
+        "image": "/stores/store-a/placeholder.jpg",
         "imageAlt": "A calm interior with layered textiles"
       }
     ]

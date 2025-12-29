@@ -5,8 +5,8 @@
     "title": "Meridian Vase",
     "description": "A tall ceramic vessel with a matte glaze and a softly tapered profile.",
     "images": [
-      "/stores/store-a/images/product-vase-1.jpg",
-      "/stores/store-a/images/product-vase-2.jpg"
+      "/stores/store-a/placeholder.jpg",
+      "/stores/store-a/placeholder.jpg"
     ],
     "price": {
       "current": 220,
@@ -38,8 +38,8 @@
     "title": "Lumen Throw",
     "description": "A woven wool throw with a quiet drape and a subtle tonal gradient.",
     "images": [
-      "/stores/store-a/images/product-throw-1.jpg",
-      "/stores/store-a/images/product-throw-2.jpg"
+      "/stores/store-a/placeholder.jpg",
+      "/stores/store-a/placeholder.jpg"
     ],
     "price": {
       "current": 180,
@@ -64,8 +64,8 @@
     "title": "Horizon Tray",
     "description": "A stone composite tray designed for daily rituals and tabletop order.",
     "images": [
-      "/stores/store-a/images/product-tray-1.jpg",
-      "/stores/store-a/images/product-tray-2.jpg"
+      "/stores/store-a/placeholder.jpg",
+      "/stores/store-a/placeholder.jpg"
     ],
     "price": {
       "current": 140,

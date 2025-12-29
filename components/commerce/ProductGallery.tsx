@@ -16,9 +16,7 @@ export function ProductGallery({ images, alt, storeId }: ProductGalleryProps) {
           storeId={storeId}
           src={primary}
           alt={alt}
-          fill
-          className="object-cover"
-          sizes="(min-width: 1024px) 45vw, 90vw"
+          className="h-full w-full object-cover"
         />
       </div>
       {rest.length ? (
@@ -32,9 +30,7 @@ export function ProductGallery({ images, alt, storeId }: ProductGalleryProps) {
                 storeId={storeId}
                 src={image}
                 alt={alt}
-                fill
-                className="object-cover"
-                sizes="(min-width: 1024px) 15vw, 30vw"
+                className="h-full w-full object-cover"
               />
             </div>
           ))}

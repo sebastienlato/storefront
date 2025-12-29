@@ -20,9 +20,7 @@ export function ProductCard({ product, storeId }: ProductCardProps) {
           storeId={storeId}
           src={product.images[0]}
           alt={product.title}
-          fill
-          className="object-cover transition duration-300 group-hover:scale-[1.02]"
-          sizes="(min-width: 768px) 30vw, 90vw"
+          className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
         />
       </div>
       <div className="space-y-2">

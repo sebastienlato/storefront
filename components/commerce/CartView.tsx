@@ -62,9 +62,7 @@ export function CartView({ products, commerce, storeId }: CartViewProps) {
                   storeId={storeId}
                   src={product.images[0]}
                   alt={product.title}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 768px) 120px, 80vw"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <div className="flex-1 space-y-4">
