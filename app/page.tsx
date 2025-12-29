@@ -1,17 +1,14 @@
-import { Container } from "@/components/layout/Container";
-import { Section } from "@/components/layout/Section";
+import { BlockRenderer } from "@/components/blocks/BlockRenderer";
 import { getStore } from "@/lib/store/getStore";
 
 export default async function Home() {
-  const { content } = await getStore();
-  const { seo } = content.home;
+  const { content, collections, config } = await getStore();
 
   return (
-    <Section>
-      <Container className="space-y-6">
-        <h1>{seo.title}</h1>
-        {seo.description ? <p className="max-w-2xl">{seo.description}</p> : null}
-      </Container>
-    </Section>
+    <BlockRenderer
+      blocks={content.home.blocks}
+      collections={collections}
+      store={config}
+    />
   );
 }

@@ -6,6 +6,15 @@
     },
     "blocks": [
       {
+        "id": "promo-note",
+        "type": "promo-banner",
+        "text": "Limited studio release: complimentary care kit with each order.",
+        "cta": {
+          "label": "View details",
+          "href": "/collections/objects"
+        }
+      },
+      {
         "id": "hero-main",
         "type": "hero",
         "title": "Quiet objects, lasting presence.",
@@ -14,7 +23,19 @@
           "label": "Explore the collection",
           "href": "/collections/objects"
         },
-        "image": "/stores/store-a/images/hero.jpg"
+        "image": "/stores/store-a/images/hero.jpg",
+        "imageAlt": "Curated objects on a neutral surface"
+      },
+      {
+        "id": "featured-collections",
+        "type": "featured-collections",
+        "title": "Curated collections",
+        "subtitle": "Small-batch releases organized for thoughtful interiors.",
+        "cta": {
+          "label": "Browse all",
+          "href": "/collections/objects"
+        },
+        "collectionHandles": ["objects", "textiles"]
       },
       {
         "id": "features-core",
@@ -34,6 +55,12 @@
             "description": "Limited runs shaped with attention to proportion and balance."
           }
         ]
+      },
+      {
+        "id": "trust-bar",
+        "type": "trust-bar",
+        "title": "A considered experience",
+        "source": "store"
       },
       {
         "id": "image-strip",
@@ -61,6 +88,18 @@
             "role": "Boutique Hotel"
           }
         ]
+      },
+      {
+        "id": "cta-section",
+        "type": "cta-section",
+        "title": "Bring intention to every room",
+        "description": "Explore small-batch releases crafted for daily rituals and lasting calm.",
+        "cta": {
+          "label": "Shop new arrivals",
+          "href": "/collections/objects"
+        },
+        "image": "/stores/store-a/images/cta.jpg",
+        "imageAlt": "A calm interior with layered textiles"
       }
     ]
   },

@@ -89,6 +89,7 @@ export type HeroBlock = {
   subtitle?: string;
   cta?: CallToAction;
   image?: string;
+  imageAlt?: string;
 };
 
 export type FeatureGridBlock = {
@@ -99,6 +100,40 @@ export type FeatureGridBlock = {
     title: string;
     description: string;
   }[];
+};
+
+export type FeaturedCollectionsBlock = {
+  id: string;
+  type: "featured-collections";
+  title?: string;
+  subtitle?: string;
+  cta?: CallToAction;
+  collectionHandles: string[];
+};
+
+export type TrustBarBlock = {
+  id: string;
+  type: "trust-bar";
+  title?: string;
+  source: "store" | "content";
+  items?: TrustItem[];
+};
+
+export type PromoBannerBlock = {
+  id: string;
+  type: "promo-banner";
+  text: string;
+  cta?: CallToAction;
+};
+
+export type CTASectionBlock = {
+  id: string;
+  type: "cta-section";
+  title: string;
+  description?: string;
+  cta: CallToAction;
+  image?: string;
+  imageAlt?: string;
 };
 
 export type ImageStripBlock = {
@@ -141,9 +176,13 @@ export type ContactBlock = {
 
 export type ContentBlock =
   | HeroBlock
+  | FeaturedCollectionsBlock
   | FeatureGridBlock
   | ImageStripBlock
   | TestimonialBlock
+  | TrustBarBlock
+  | PromoBannerBlock
+  | CTASectionBlock
   | RichTextBlock
   | ContactBlock;
 
