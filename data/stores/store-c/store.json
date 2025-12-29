@@ -1,107 +1,107 @@
 {
-  "id": "store-b",
+  "id": "store-c",
   "brand": {
-    "name": "Sagefold",
-    "tagline": "Slow rituals, green calm",
-    "description": "A quiet studio of mindful essentials for spaces that breathe and settle.",
-    "logoPath": "/stores/store-b/logo.svg",
-    "logoAlt": "Sagefold logomark"
+    "name": "Bluehaven",
+    "tagline": "Deep calm, coastal clarity",
+    "description": "An editorial collection of ocean-inspired essentials for modern, quiet spaces.",
+    "logoPath": "/stores/store-c/logo.svg",
+    "logoAlt": "Bluehaven logomark"
   },
   "theme": {
     "colors": {
-      "background": "#f3f7f2",
-      "foreground": "#122017",
-      "muted": "#5a6b60",
-      "accent": "#2f5d3a",
-      "accentMuted": "#d9e6d8",
-      "border": "#d4ded2",
-      "surface": "#f9fbf7"
+      "background": "#f2f6fb",
+      "foreground": "#0b1f34",
+      "muted": "#526375",
+      "accent": "#1e5b83",
+      "accentMuted": "#cfe7ea",
+      "border": "#d6e1ea",
+      "surface": "#f8fbfe"
     },
     "typography": {
       "display": "Cormorant Garamond, serif",
       "body": "Manrope, sans-serif"
     },
     "radii": {
-      "sm": "4px",
-      "md": "10px",
-      "lg": "18px",
+      "sm": "8px",
+      "md": "14px",
+      "lg": "24px",
       "pill": "999px"
     },
     "spacing": {
-      "sectionY": "120px",
+      "sectionY": "112px",
       "containerX": "72px"
     },
     "shadows": {
-      "sm": "0 6px 16px rgba(18, 32, 23, 0.08)",
-      "md": "0 16px 36px rgba(18, 32, 23, 0.12)",
-      "lg": "0 28px 60px rgba(18, 32, 23, 0.18)"
+      "sm": "0 6px 18px rgba(11, 31, 52, 0.08)",
+      "md": "0 18px 40px rgba(11, 31, 52, 0.12)",
+      "lg": "0 32px 70px rgba(11, 31, 52, 0.18)"
     }
   },
   "navigation": {
     "header": [
-      { "label": "Sanctuary", "href": "/" },
-      { "label": "Ritual Sets", "href": "/collections/rituals" },
-      { "label": "Our Practice", "href": "/about" },
-      { "label": "Care Desk", "href": "/contact" }
+      { "label": "Harbor", "href": "/" },
+      { "label": "Tide Collections", "href": "/collections/tideworks" },
+      { "label": "Studio", "href": "/about" },
+      { "label": "Concierge", "href": "/contact" }
     ],
     "headerCta": {
-      "label": "Basket",
+      "label": "Bag",
       "href": "/cart",
       "variant": "ghost"
     },
     "footer": [
-      { "label": "Privacy Notes", "href": "/legal/privacy" },
+      { "label": "Privacy", "href": "/legal/privacy" },
       { "label": "Terms", "href": "/legal/terms" },
-      { "label": "Shipping", "href": "/legal/shipping" },
+      { "label": "Delivery", "href": "/legal/shipping" },
       { "label": "Returns", "href": "/legal/returns" }
     ],
     "social": [
       {
         "label": "Instagram",
-        "href": "https://www.instagram.com/sagefoldstudio",
+        "href": "https://www.instagram.com/bluehavenstudio",
         "icon": "instagram"
       },
       {
         "label": "Pinterest",
-        "href": "https://www.pinterest.com/sagefoldstudio",
+        "href": "https://www.pinterest.com/bluehavenstudio",
         "icon": "pinterest"
       }
     ]
   },
   "trust": [
     {
-      "title": "Quiet materials",
-      "description": "Plant-based and mineral-rich finishes chosen for calm textures.",
+      "title": "Ocean-safe materials",
+      "description": "Natural fibers and mineral finishes designed for longevity.",
       "icon": "package"
     },
     {
-      "title": "Measured delivery",
-      "description": "Tracked shipping with gentle packing and clear handling notes.",
+      "title": "Coastal delivery",
+      "description": "Tracked shipping with climate-conscious packing.",
       "icon": "globe"
     },
     {
-      "title": "Care-first design",
-      "description": "Each piece arrives with simple rituals for long life.",
+      "title": "Care rituals",
+      "description": "Every piece ships with simple care notes for years of use.",
       "icon": "shield"
     }
   ],
   "commerce": {
-    "currency": "USD",
-    "locale": "en-US",
+    "currency": "EUR",
+    "locale": "de-DE",
     "ctas": {
-      "addToCart": { "label": "Add to basket", "successLabel": "Added" },
-      "checkout": { "label": "Begin checkout", "href": "/checkout" },
+      "addToCart": { "label": "Add to bag", "successLabel": "Added" },
+      "checkout": { "label": "Proceed to checkout", "href": "/checkout" },
       "continueShopping": {
-        "label": "Return to rituals",
-        "href": "/collections/rituals"
+        "label": "Return to tides",
+        "href": "/collections/tideworks"
       }
     },
     "cart": {
-      "title": "Your basket",
-      "emptyTitle": "Your basket is empty",
-      "emptyDescription": "Wander the rituals to find something grounding.",
+      "title": "Your bag",
+      "emptyTitle": "Your bag is empty",
+      "emptyDescription": "Explore the tides to find something calm and collected.",
       "subtotalLabel": "Subtotal",
-      "promoLabel": "Gift code",
+      "promoLabel": "Access code",
       "promoPlaceholder": "Enter code",
       "promoApplyLabel": "Apply",
       "quantityLabel": "Quantity",
@@ -132,7 +132,7 @@
       },
       "payment": {
         "title": "Payment",
-        "description": "Secure payment handled by our checkout partner."
+        "description": "Secure checkout with our payment partner."
       },
       "summary": {
         "title": "Order summary",
@@ -148,8 +148,8 @@
       "placeOrderLabel": "Place order",
       "confirmation": {
         "title": "Your order is confirmed",
-        "description": "We will share calm, timely updates as your order travels.",
-        "cta": { "label": "Return to rituals", "href": "/collections/rituals" }
+        "description": "We will share updates as your order moves from studio to shore.",
+        "cta": { "label": "Return to tides", "href": "/collections/tideworks" }
       }
     }
   }

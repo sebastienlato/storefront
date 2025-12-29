@@ -77,6 +77,8 @@ export type StoreConfig = {
   navigation: Navigation;
   trust: TrustItem[];
   commerce: {
+    currency: string;
+    locale: string;
     ctas: {
       addToCart: {
         label: string;

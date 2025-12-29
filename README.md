@@ -21,3 +21,8 @@ Premium, reusable, config-driven storefront framework built with Next.js App Rou
 - store-a is sample data only and “no code should assume store-a”.
 - Store-specific content, products, and theme tokens live in data folders, not in components.
 - See `plan.md`, `architecture.md`, and `AGENTS.md` for contribution rules and phase guidance.
+
+## Switching store
+
+- STORE_ID=store-a npm run dev
+- STORE_ID=store-b npm run dev

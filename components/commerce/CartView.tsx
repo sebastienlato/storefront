@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { StoreImage } from "@/components/ui/StoreImage";
 import { getCartSubtotal, resolveCartItems } from "@/lib/commerce/cart";
+import { formatMoney } from "@/lib/commerce/money";
 import { useCart } from "@/lib/commerce/cart-store";
 import type { Product, StoreConfig } from "@/lib/store/types";
 
@@ -14,22 +15,11 @@ export type CartViewProps = {
   storeId: string;
 };
 
-const formatCurrency = (amount: number, currency?: string) => {
-  if (!currency) {
-    return amount.toFixed(2);
-  }
-
-  return new Intl.NumberFormat(undefined, {
-    style: "currency",
-    currency,
-  }).format(amount);
-};
-
 export function CartView({ products, commerce, storeId }: CartViewProps) {
   const { items, updateQuantity, removeItem } = useCart(storeId);
   const resolvedItems = resolveCartItems(items, products);
   const subtotal = getCartSubtotal(resolvedItems);
-  const currency = resolvedItems[0]?.product.price.currency;
+  const { currency, locale } = commerce;
 
   if (resolvedItems.length === 0) {
     return (
@@ -135,7 +125,7 @@ export function CartView({ products, commerce, storeId }: CartViewProps) {
             {commerce.cart.subtotalLabel}
           </div>
           <div className="text-2xl text-[var(--color-fg)]">
-            {formatCurrency(subtotal, currency)}
+            {formatMoney(subtotal, { currency, locale })}
           </div>
         </div>
         <div className="space-y-3">

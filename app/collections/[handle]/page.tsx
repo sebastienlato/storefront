@@ -51,7 +51,12 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
             <p className="max-w-2xl">{collection.description}</p>
           ) : null}
         </div>
-        <ProductGrid products={collectionProducts} storeId={config.id} />
+        <ProductGrid
+          products={collectionProducts}
+          storeId={config.id}
+          currency={config.commerce.currency}
+          locale={config.commerce.locale}
+        />
       </Container>
     </Section>
   );

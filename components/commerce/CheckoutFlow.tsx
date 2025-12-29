@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 
 import { Button } from "@/components/ui/Button";
 import { getCartSubtotal, resolveCartItems } from "@/lib/commerce/cart";
+import { formatMoney } from "@/lib/commerce/money";
 import { useCart } from "@/lib/commerce/cart-store";
 import { mockPaymentProvider } from "@/lib/commerce/payment";
 import type { Product, StoreConfig } from "@/lib/store/types";
@@ -16,17 +17,6 @@ export type CheckoutFlowProps = {
   storeId: string;
 };
 
-const formatCurrency = (amount: number, currency?: string) => {
-  if (!currency) {
-    return amount.toFixed(2);
-  }
-
-  return new Intl.NumberFormat(undefined, {
-    style: "currency",
-    currency,
-  }).format(amount);
-};
-
 export function CheckoutFlow({ products, commerce, storeId }: CheckoutFlowProps) {
   const router = useRouter();
   const { items, clear } = useCart(storeId);
@@ -35,7 +25,7 @@ export function CheckoutFlow({ products, commerce, storeId }: CheckoutFlowProps)
     [items, products]
   );
   const subtotal = getCartSubtotal(resolvedItems);
-  const currency = resolvedItems[0]?.product.price.currency;
+  const { currency, locale } = commerce;
   const shipping = 0;
   const tax = 0;
   const total = subtotal + shipping + tax;
@@ -65,10 +55,7 @@ export function CheckoutFlow({ products, commerce, storeId }: CheckoutFlowProps)
   const handlePlaceOrder = async () => {
     if (resolvedItems.length === 0) return;
     setIsSubmitting(true);
-    const intent = await mockPaymentProvider.createIntent(
-      total,
-      currency ?? ""
-    );
+    const intent = await mockPaymentProvider.createIntent(total, currency);
     await mockPaymentProvider.confirmIntent(intent.id);
     clear();
     router.push("/checkout/confirmation");
@@ -292,19 +279,19 @@ export function CheckoutFlow({ products, commerce, storeId }: CheckoutFlowProps)
         <div className="space-y-3 text-sm">
           <div className="flex items-center justify-between">
             <span>{commerce.checkout.summary.subtotalLabel}</span>
-            <span>{formatCurrency(subtotal, currency)}</span>
+            <span>{formatMoney(subtotal, { currency, locale })}</span>
           </div>
           <div className="flex items-center justify-between text-[var(--color-muted)]">
             <span>{commerce.checkout.summary.shippingLabel}</span>
-            <span>{formatCurrency(shipping, currency)}</span>
+            <span>{formatMoney(shipping, { currency, locale })}</span>
           </div>
           <div className="flex items-center justify-between text-[var(--color-muted)]">
             <span>{commerce.checkout.summary.taxLabel}</span>
-            <span>{formatCurrency(tax, currency)}</span>
+            <span>{formatMoney(tax, { currency, locale })}</span>
           </div>
           <div className="flex items-center justify-between text-base">
             <span>{commerce.checkout.summary.totalLabel}</span>
-            <span>{formatCurrency(total, currency)}</span>
+            <span>{formatMoney(total, { currency, locale })}</span>
           </div>
         </div>
         {commerce.ctas.continueShopping ? (

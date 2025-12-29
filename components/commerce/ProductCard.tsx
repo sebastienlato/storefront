@@ -7,9 +7,16 @@ import type { Product } from "@/lib/store/types";
 export type ProductCardProps = {
   product: Product;
   storeId: string;
+  currency: string;
+  locale: string;
 };
 
-export function ProductCard({ product, storeId }: ProductCardProps) {
+export function ProductCard({
+  product,
+  storeId,
+  currency,
+  locale,
+}: ProductCardProps) {
   return (
     <Link
       href={`/products/${product.handle}`}
@@ -27,7 +34,7 @@ export function ProductCard({ product, storeId }: ProductCardProps) {
         <div className="text-xs uppercase tracking-[0.2em] text-[var(--color-muted)]">
           {product.title}
         </div>
-        <Price price={product.price} />
+        <Price price={product.price} currency={currency} locale={locale} />
       </div>
     </Link>
   );

@@ -1,0 +1,80 @@
+{
+  "privacy": {
+    "title": "Privacy",
+    "updated": "2024-03-12",
+    "sections": [
+      {
+        "title": "Information we collect",
+        "body": [
+          "We collect details you provide when placing an order or contacting our concierge.",
+          "We also collect limited device data to keep our services reliable and secure."
+        ]
+      },
+      {
+        "title": "How we use information",
+        "body": [
+          "We use your information to fulfill orders, assist with care requests, and share updates.",
+          "We do not sell personal information."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "updated": "2024-03-12",
+    "sections": [
+      {
+        "title": "Orders",
+        "body": [
+          "Orders are confirmed by email once payment authorization is complete.",
+          "We may limit quantities for limited releases to keep availability fair."
+        ]
+      },
+      {
+        "title": "Returns",
+        "body": [
+          "Returns are accepted within 14 days of delivery for unused items.",
+          "Return shipping is the responsibility of the customer unless noted otherwise."
+        ]
+      }
+    ]
+  },
+  "shipping": {
+    "title": "Shipping",
+    "updated": "2024-03-12",
+    "sections": [
+      {
+        "title": "Delivery windows",
+        "body": [
+          "Orders ship within 2-4 business days unless a product page notes otherwise.",
+          "International delivery timelines vary by destination."
+        ]
+      },
+      {
+        "title": "Tracking",
+        "body": [
+          "Tracking details are shared once the order leaves our studio."
+        ]
+      }
+    ]
+  },
+  "returns": {
+    "title": "Returns",
+    "updated": "2024-03-12",
+    "sections": [
+      {
+        "title": "Return policy",
+        "body": [
+          "Returns are accepted within 14 days of delivery for unused items.",
+          "Return requests must include the original order number."
+        ]
+      },
+      {
+        "title": "Condition",
+        "body": [
+          "Items must be returned in original packaging and condition."
+        ]
+      }
+    ]
+  }
+}

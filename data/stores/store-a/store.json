@@ -86,6 +86,8 @@
     }
   ],
   "commerce": {
+    "currency": "CAD",
+    "locale": "en-CA",
     "ctas": {
       "addToCart": { "label": "Add to cart", "successLabel": "Added ✓" },
       "checkout": { "label": "Checkout", "href": "/checkout" },

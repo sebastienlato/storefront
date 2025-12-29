@@ -1,0 +1,119 @@
+[
+  {
+    "id": "prod-tideglass-carafe",
+    "handle": "tideglass-carafe",
+    "title": "Tideglass Carafe",
+    "description": "A hand-blown glass carafe with an ocean tint and a weighted base.",
+    "images": [
+      "/stores/store-c/placeholder.jpg",
+      "/stores/store-c/placeholder.jpg"
+    ],
+    "price": {
+      "current": 210,
+      "currency": "EUR"
+    },
+    "variants": [
+      {
+        "id": "var-tideglass-deep",
+        "title": "Deep",
+        "options": [{ "name": "Tint", "value": "Deep" }],
+        "sku": "CAR-DEP-001",
+        "inStock": true,
+        "inventoryQty": 14
+      },
+      {
+        "id": "var-tideglass-foam",
+        "title": "Foam",
+        "options": [{ "name": "Tint", "value": "Foam" }],
+        "sku": "CAR-FOA-001",
+        "inStock": true,
+        "inventoryQty": 18
+      }
+    ],
+    "tags": ["glass", "ritual"]
+  },
+  {
+    "id": "prod-harbor-tray",
+    "handle": "harbor-tray",
+    "title": "Harbor Tray",
+    "description": "A stone composite tray with a matte navy finish for organized surfaces.",
+    "images": [
+      "/stores/store-c/placeholder.jpg",
+      "/stores/store-c/placeholder.jpg"
+    ],
+    "price": {
+      "current": 135,
+      "currency": "EUR"
+    },
+    "variants": [
+      {
+        "id": "var-harbor-tray-navy",
+        "title": "Navy",
+        "options": [{ "name": "Finish", "value": "Navy" }],
+        "sku": "TRY-NAV-002",
+        "inStock": true,
+        "inventoryQty": 26
+      }
+    ],
+    "tags": ["stone", "tray"]
+  },
+  {
+    "id": "prod-siren-linen-throw",
+    "handle": "siren-linen-throw",
+    "title": "Siren Linen Throw",
+    "description": "A woven linen throw with soft fringe and a sea-foam edge.",
+    "images": [
+      "/stores/store-c/placeholder.jpg",
+      "/stores/store-c/placeholder.jpg"
+    ],
+    "price": {
+      "current": 195,
+      "compareAt": 230,
+      "currency": "EUR"
+    },
+    "variants": [
+      {
+        "id": "var-siren-throw-foam",
+        "title": "Sea Foam",
+        "options": [{ "name": "Color", "value": "Sea Foam" }],
+        "sku": "THR-SEA-003",
+        "inStock": true,
+        "inventoryQty": 20
+      }
+    ],
+    "tags": ["textile", "rest"]
+  },
+  {
+    "id": "prod-lighthouse-candle-set",
+    "handle": "lighthouse-candle-set",
+    "title": "Lighthouse Candle Set",
+    "description": "A pair of soy candles with mineral notes and a long, calm burn.",
+    "images": [
+      "/stores/store-c/placeholder.jpg",
+      "/stores/store-c/placeholder.jpg"
+    ],
+    "price": {
+      "current": 88,
+      "currency": "EUR"
+    },
+    "variants": [
+      {
+        "id": "var-lighthouse-candle-dune",
+        "title": "Dune",
+        "options": [{ "name": "Scent", "value": "Dune" }],
+        "sku": "CAN-DUN-004",
+        "inStock": true,
+        "inventoryQty": 34
+      },
+      {
+        "id": "var-lighthouse-candle-reef",
+        "title": "Reef",
+        "options": [{ "name": "Scent", "value": "Reef" }],
+        "sku": "CAN-REF-004",
+        "inStock": true,
+        "inventoryQty": 28
+      }
+    ],
+    "tags": ["candle", "ritual"]
+  }
+]

@@ -105,6 +105,9 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
     throw new Error("store.commerce must be an object.");
   }
 
+  assertString(value.commerce.currency, "store.commerce.currency");
+  assertString(value.commerce.locale, "store.commerce.locale");
+
   if (!isRecord(value.commerce.ctas)) {
     throw new Error("store.commerce.ctas must be an object.");
   }

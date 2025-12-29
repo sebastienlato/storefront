@@ -11,6 +11,8 @@ import type { Product, Variant } from "@/lib/store/types";
 export type ProductPurchasePanelProps = {
   product: Product;
   storeId: string;
+  currency: string;
+  locale: string;
   addToCartLabel: string;
   addToCartSuccessLabel: string;
 };
@@ -40,6 +42,8 @@ const resolveVariant = (
 export function ProductPurchasePanel({
   product,
   storeId,
+  currency,
+  locale,
   addToCartLabel,
   addToCartSuccessLabel,
 }: ProductPurchasePanelProps) {
@@ -64,7 +68,7 @@ export function ProductPurchasePanel({
 
   return (
     <div className="space-y-6">
-      <Price price={product.price} />
+      <Price price={product.price} currency={currency} locale={locale} />
       {product.variants.length ? (
         <VariantSelector
           variants={product.variants}

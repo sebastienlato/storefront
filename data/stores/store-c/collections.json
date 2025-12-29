@@ -1,0 +1,22 @@
+[
+  {
+    "id": "col-tideworks",
+    "handle": "tideworks",
+    "title": "Tideworks",
+    "description": "Glass, stone, and scent essentials for coastal ritual.",
+    "image": "/stores/store-c/placeholder.jpg",
+    "productHandles": [
+      "tideglass-carafe",
+      "harbor-tray",
+      "lighthouse-candle-set"
+    ]
+  },
+  {
+    "id": "col-deep-rest",
+    "handle": "deep-rest",
+    "title": "Deep Rest",
+    "description": "Soft layers and calm textures for slow evenings.",
+    "image": "/stores/store-c/placeholder.jpg",
+    "productHandles": ["siren-linen-throw"]
+  }
+]

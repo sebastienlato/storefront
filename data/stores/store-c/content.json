@@ -1,0 +1,141 @@
+{
+  "home": {
+    "seo": {
+      "title": "Bluehaven | Ocean calm",
+      "description": "Premium coastal essentials shaped by quiet color, calm texture, and deep-blue light."
+    },
+    "blocks": [
+      {
+        "id": "promo-note",
+        "type": "promo-banner",
+        "text": "Blue tide release: complimentary linen wrap with every tray set.",
+        "cta": {
+          "label": "See the release",
+          "href": "/collections/tideworks"
+        }
+      },
+      {
+        "id": "hero-main",
+        "type": "hero",
+        "title": "Blue ocean quiet, refined daily rituals.",
+        "subtitle": "A deep-water palette and soft materials designed to steady the room.",
+        "cta": {
+          "label": "Shop the tides",
+          "href": "/collections/tideworks"
+        },
+        "image": "/stores/store-c/placeholder.jpg",
+        "imageAlt": "Ocean-toned objects on a bright surface"
+      },
+      {
+        "id": "image-strip",
+        "type": "image-strip",
+        "title": "Rooms that breathe with the tide",
+        "images": [
+          { "src": "/stores/store-c/placeholder.jpg", "alt": "Ceramic vessels in blue light" },
+          { "src": "/stores/store-c/placeholder.jpg", "alt": "Linen throw draped over a chair" },
+          { "src": "/stores/store-c/placeholder.jpg", "alt": "Tray with glassware and candle" }
+        ]
+      },
+      {
+        "id": "featured-collections",
+        "type": "featured-collections",
+        "title": "Tide collections",
+        "subtitle": "Curated groupings for coastal ritual and deep rest.",
+        "cta": {
+          "label": "Browse all",
+          "href": "/collections/tideworks"
+        },
+        "collectionHandles": ["tideworks", "deep-rest"]
+      },
+      {
+        "id": "features-core",
+        "type": "feature-grid",
+        "title": "Designed for blue calm",
+        "items": [
+          {
+            "title": "Deepwater palette",
+            "description": "Navy, ocean blue, and sea-foam accents for a composed mood."
+          },
+          {
+            "title": "Coastal materials",
+            "description": "Glass, stone, and linen chosen for texture and longevity."
+          },
+          {
+            "title": "Editorial scale",
+            "description": "Balanced proportions that feel refined and unhurried."
+          }
+        ]
+      },
+      {
+        "id": "testimonials",
+        "type": "testimonials",
+        "title": "Studios that keep it blue",
+        "items": [
+          {
+            "quote": "Bluehaven brings calm focus to every surface we style.",
+            "name": "Creative Director",
+            "role": "Coastal Studio"
+          },
+          {
+            "quote": "The palette is serene and the materials feel substantial.",
+            "name": "Hospitality Lead",
+            "role": "Seaside Retreat"
+          }
+        ]
+      },
+      {
+        "id": "trust-bar",
+        "type": "trust-bar",
+        "title": "A composed experience",
+        "source": "store"
+      },
+      {
+        "id": "cta-section",
+        "type": "cta-section",
+        "title": "Settle the room with blue calm",
+        "description": "Discover pieces that bring clarity, quiet, and coastal light.",
+        "cta": {
+          "label": "Shop deep rest",
+          "href": "/collections/deep-rest"
+        },
+        "image": "/stores/store-c/placeholder.jpg",
+        "imageAlt": "Soft blue interior with layered textiles"
+      }
+    ]
+  },
+  "about": {
+    "seo": {
+      "title": "Studio | Bluehaven",
+      "description": "A coastal studio crafting deep, calm essentials for modern spaces."
+    },
+    "blocks": [
+      {
+        "id": "about-story",
+        "type": "rich-text",
+        "title": "Coastal clarity, quiet intent",
+        "paragraphs": [
+          "Bluehaven builds essentials from the calm of open water and the rhythm of the tide.",
+          "Every release is edited for clarity, with restrained forms and sea-toned texture."
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "seo": {
+      "title": "Concierge | Bluehaven",
+      "description": "Reach our concierge for orders, care guidance, and coastal notes."
+    },
+    "blocks": [
+      {
+        "id": "contact-methods",
+        "type": "contact",
+        "title": "We are here for calm guidance",
+        "methods": [
+          { "label": "Email", "value": "hello@bluehaven.co" },
+          { "label": "Phone", "value": "+49 30 555 2109" },
+          { "label": "Concierge Hours", "value": "Mon-Fri, 9am-6pm" }
+        ]
+      }
+    ]
+  }
+}

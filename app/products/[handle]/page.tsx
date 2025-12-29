@@ -55,6 +55,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
           <ProductPurchasePanel
             product={product}
             storeId={config.id}
+            currency={config.commerce.currency}
+            locale={config.commerce.locale}
             addToCartLabel={config.commerce.ctas.addToCart.label}
             addToCartSuccessLabel={config.commerce.ctas.addToCart.successLabel}
           />
