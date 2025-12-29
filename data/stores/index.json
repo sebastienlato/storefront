@@ -1,4 +1,4 @@
 {
   "defaultStoreId": "store-a",
-  "storeIds": ["store-a"]
+  "storeIds": ["store-a", "store-b"]
 }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "prod-ceramic-vase",
+    "handle": "meridian-vase",
+    "title": "Meridian Vase",
+    "description": "A tall ceramic vessel with a matte glaze and a softly tapered profile.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 220,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-ceramic-vase-sand",
+        "title": "Sand",
+        "options": [{ "name": "Finish", "value": "Sand" }],
+        "sku": "VAS-SND-001",
+        "inStock": true,
+        "inventoryQty": 24
+      },
+      {
+        "id": "var-ceramic-vase-graphite",
+        "title": "Graphite",
+        "options": [{ "name": "Finish", "value": "Graphite" }],
+        "sku": "VAS-GPH-001",
+        "inStock": true,
+        "inventoryQty": 12
+      }
+    ],
+    "tags": ["ceramic", "vessel"]
+  },
+  {
+    "id": "prod-wool-throw",
+    "handle": "lumen-throw",
+    "title": "Lumen Throw",
+    "description": "A woven wool throw with a quiet drape and a subtle tonal gradient.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 180,
+      "compareAt": 210,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-wool-throw-sable",
+        "title": "Sable",
+        "options": [{ "name": "Color", "value": "Sable" }],
+        "sku": "THR-SBL-002",
+        "inStock": true,
+        "inventoryQty": 18
+      }
+    ],
+    "tags": ["textile", "throw"]
+  },
+  {
+    "id": "prod-stone-tray",
+    "handle": "horizon-tray",
+    "title": "Horizon Tray",
+    "description": "A stone composite tray designed for daily rituals and tabletop order.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 140,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-stone-tray-classic",
+        "title": "Classic",
+        "options": [{ "name": "Finish", "value": "Classic" }],
+        "sku": "TRY-CLS-003",
+        "inStock": true,
+        "inventoryQty": 30
+      }
+    ],
+    "tags": ["stone", "tray"]
+  }
+]

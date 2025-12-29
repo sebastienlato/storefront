@@ -1,0 +1,18 @@
+[
+  {
+    "id": "col-objects",
+    "handle": "objects",
+    "title": "Objects",
+    "description": "Sculptural pieces and everyday forms for grounded interiors.",
+    "image": "/stores/store-b/placeholder.jpg",
+    "productHandles": ["meridian-vase", "horizon-tray"]
+  },
+  {
+    "id": "col-textiles",
+    "handle": "textiles",
+    "title": "Textiles",
+    "description": "Soft layers and tactile weaves in balanced, neutral tones.",
+    "image": "/stores/store-b/placeholder.jpg",
+    "productHandles": ["lumen-throw"]
+  }
+]

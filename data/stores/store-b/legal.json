@@ -1,0 +1,42 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "2024-01-15",
+    "sections": [
+      {
+        "title": "Information we collect",
+        "body": [
+          "We collect details you provide when placing an order or contacting the studio.",
+          "We also collect limited device data to improve performance and security."
+        ]
+      },
+      {
+        "title": "How we use information",
+        "body": [
+          "We use your information to process orders, provide support, and communicate updates.",
+          "We do not sell personal data."
+        ]
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "updated": "2024-01-15",
+    "sections": [
+      {
+        "title": "Orders",
+        "body": [
+          "Orders are confirmed by email once payment is authorized.",
+          "We reserve the right to limit quantities for limited-release items."
+        ]
+      },
+      {
+        "title": "Returns",
+        "body": [
+          "Returns are accepted within 14 days of delivery for unused items.",
+          "Return shipping is the responsibility of the customer unless otherwise stated."
+        ]
+      }
+    ]
+  }
+}
