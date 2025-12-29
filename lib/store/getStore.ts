@@ -23,15 +23,31 @@ const readJsonFile = async <T>(filePath: string): Promise<T> => {
 const isRecord = (value: unknown): value is Record<string, unknown> =>
   typeof value === "object" && value !== null && !Array.isArray(value);
 
-const assertString = (value: unknown, label: string): asserts value is string => {
+const assertString: (value: unknown, label: string) => asserts value is string = (
+  value,
+  label
+) => {
   if (typeof value !== "string") {
     throw new Error(`Expected ${label} to be a string.`);
   }
 };
 
-const assertArray = (value: unknown, label: string): asserts value is unknown[] => {
+const assertArray: (value: unknown, label: string) => asserts value is unknown[] = (
+  value,
+  label
+) => {
   if (!Array.isArray(value)) {
     throw new Error(`Expected ${label} to be an array.`);
+  }
+};
+
+const assertStringArray: (
+  value: unknown,
+  label: string
+) => asserts value is string[] = (value, label) => {
+  assertArray(value, label);
+  if (!value.every((entry) => typeof entry === "string")) {
+    throw new Error(`Expected ${label} to be an array of strings.`);
   }
 };
 
@@ -41,11 +57,11 @@ const assertStoreIndex = (value: unknown): StoreIndex => {
   }
 
   assertString(value.defaultStoreId, "defaultStoreId");
-  assertArray(value.storeIds, "storeIds");
+  assertStringArray(value.storeIds, "storeIds");
 
   return {
     defaultStoreId: value.defaultStoreId,
-    storeIds: value.storeIds as string[],
+    storeIds: value.storeIds,
   };
 };
 

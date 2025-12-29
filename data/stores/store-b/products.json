@@ -1,86 +1,152 @@
 [
   {
-    "id": "prod-ceramic-vase",
-    "handle": "meridian-vase",
-    "title": "Meridian Vase",
-    "description": "A tall ceramic vessel with a matte glaze and a softly tapered profile.",
+    "id": "prod-tea-set",
+    "handle": "stillwater-tea-set",
+    "title": "Stillwater Tea Set",
+    "description": "A stoneware tea set with a matte sage glaze and a soft, grounded weight.",
     "images": [
       "/stores/store-b/placeholder.jpg",
       "/stores/store-b/placeholder.jpg"
     ],
     "price": {
-      "current": 220,
+      "current": 240,
       "currency": "USD"
     },
     "variants": [
       {
-        "id": "var-ceramic-vase-sand",
-        "title": "Sand",
-        "options": [{ "name": "Finish", "value": "Sand" }],
-        "sku": "VAS-SND-001",
+        "id": "var-tea-set-moss",
+        "title": "Moss",
+        "options": [{ "name": "Glaze", "value": "Moss" }],
+        "sku": "TEA-MOS-001",
         "inStock": true,
-        "inventoryQty": 24
+        "inventoryQty": 16
       },
       {
-        "id": "var-ceramic-vase-graphite",
-        "title": "Graphite",
-        "options": [{ "name": "Finish", "value": "Graphite" }],
-        "sku": "VAS-GPH-001",
+        "id": "var-tea-set-stone",
+        "title": "Stone",
+        "options": [{ "name": "Glaze", "value": "Stone" }],
+        "sku": "TEA-STN-001",
         "inStock": true,
         "inventoryQty": 12
       }
     ],
-    "tags": ["ceramic", "vessel"]
+    "tags": ["stoneware", "ritual"]
   },
   {
-    "id": "prod-wool-throw",
-    "handle": "lumen-throw",
-    "title": "Lumen Throw",
-    "description": "A woven wool throw with a quiet drape and a subtle tonal gradient.",
+    "id": "prod-incense-holder",
+    "handle": "ridge-incense-holder",
+    "title": "Ridge Incense Holder",
+    "description": "A low ceramic ridge that keeps ash contained and the surface calm.",
     "images": [
       "/stores/store-b/placeholder.jpg",
       "/stores/store-b/placeholder.jpg"
     ],
     "price": {
-      "current": 180,
-      "compareAt": 210,
+      "current": 68,
       "currency": "USD"
     },
     "variants": [
       {
-        "id": "var-wool-throw-sable",
-        "title": "Sable",
-        "options": [{ "name": "Color", "value": "Sable" }],
-        "sku": "THR-SBL-002",
+        "id": "var-incense-holder-river",
+        "title": "River",
+        "options": [{ "name": "Tone", "value": "River" }],
+        "sku": "INC-RIV-002",
         "inStock": true,
-        "inventoryQty": 18
+        "inventoryQty": 40
+      },
+      {
+        "id": "var-incense-holder-forest",
+        "title": "Forest",
+        "options": [{ "name": "Tone", "value": "Forest" }],
+        "sku": "INC-FOR-002",
+        "inStock": true,
+        "inventoryQty": 28
+      }
+    ],
+    "tags": ["ceramic", "ritual"]
+  },
+  {
+    "id": "prod-serving-tray",
+    "handle": "cedar-serving-tray",
+    "title": "Cedar Serving Tray",
+    "description": "A low cedar tray with a sealed finish for tea, candles, and quiet order.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 120,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-serving-tray-natural",
+        "title": "Natural",
+        "options": [{ "name": "Finish", "value": "Natural" }],
+        "sku": "TRY-NAT-003",
+        "inStock": true,
+        "inventoryQty": 22
+      }
+    ],
+    "tags": ["wood", "tray"]
+  },
+  {
+    "id": "prod-floor-cushion",
+    "handle": "mossline-floor-cushion",
+    "title": "Mossline Floor Cushion",
+    "description": "A linen-wrapped floor cushion with a firm, supportive fill.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 160,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-floor-cushion-kapok",
+        "title": "Kapok",
+        "options": [{ "name": "Fill", "value": "Kapok" }],
+        "sku": "CUS-KAP-004",
+        "inStock": true,
+        "inventoryQty": 20
+      },
+      {
+        "id": "var-floor-cushion-buckwheat",
+        "title": "Buckwheat",
+        "options": [{ "name": "Fill", "value": "Buckwheat" }],
+        "sku": "CUS-BWK-004",
+        "inStock": true,
+        "inventoryQty": 14
+      }
+    ],
+    "tags": ["linen", "rest"]
+  },
+  {
+    "id": "prod-linen-throw",
+    "handle": "fernweave-throw",
+    "title": "Fernweave Throw",
+    "description": "A woven linen throw with soft fringe and a gentle moss tint.",
+    "images": [
+      "/stores/store-b/placeholder.jpg",
+      "/stores/store-b/placeholder.jpg"
+    ],
+    "price": {
+      "current": 190,
+      "compareAt": 220,
+      "currency": "USD"
+    },
+    "variants": [
+      {
+        "id": "var-linen-throw-moss",
+        "title": "Moss",
+        "options": [{ "name": "Color", "value": "Moss" }],
+        "sku": "THR-MOS-005",
+        "inStock": true,
+        "inventoryQty": 19
       }
     ],
     "tags": ["textile", "throw"]
-  },
-  {
-    "id": "prod-stone-tray",
-    "handle": "horizon-tray",
-    "title": "Horizon Tray",
-    "description": "A stone composite tray designed for daily rituals and tabletop order.",
-    "images": [
-      "/stores/store-b/placeholder.jpg",
-      "/stores/store-b/placeholder.jpg"
-    ],
-    "price": {
-      "current": 140,
-      "currency": "USD"
-    },
-    "variants": [
-      {
-        "id": "var-stone-tray-classic",
-        "title": "Classic",
-        "options": [{ "name": "Finish", "value": "Classic" }],
-        "sku": "TRY-CLS-003",
-        "inStock": true,
-        "inventoryQty": 30
-      }
-    ],
-    "tags": ["stone", "tray"]
   }
 ]

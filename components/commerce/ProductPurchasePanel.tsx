@@ -10,6 +10,7 @@ import type { Product, Variant } from "@/lib/store/types";
 
 export type ProductPurchasePanelProps = {
   product: Product;
+  storeId: string;
   addToCartLabel: string;
   addToCartSuccessLabel: string;
 };
@@ -38,13 +39,14 @@ const resolveVariant = (
 
 export function ProductPurchasePanel({
   product,
+  storeId,
   addToCartLabel,
   addToCartSuccessLabel,
 }: ProductPurchasePanelProps) {
   const [selectedOptions, setSelectedOptions] = useState(() =>
     getInitialOptions(product.variants)
   );
-  const { addItem } = useCart();
+  const { addItem } = useCart(storeId);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const selectedVariant = useMemo(

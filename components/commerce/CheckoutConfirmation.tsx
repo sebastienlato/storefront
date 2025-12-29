@@ -9,10 +9,14 @@ import type { StoreConfig } from "@/lib/store/types";
 
 export type CheckoutConfirmationProps = {
   commerce: StoreConfig["commerce"];
+  storeId: string;
 };
 
-export function CheckoutConfirmation({ commerce }: CheckoutConfirmationProps) {
-  const { clear } = useCart();
+export function CheckoutConfirmation({
+  commerce,
+  storeId,
+}: CheckoutConfirmationProps) {
+  const { clear } = useCart(storeId);
 
   useEffect(() => {
     clear();

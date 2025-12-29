@@ -1,18 +1,22 @@
 [
   {
-    "id": "col-objects",
-    "handle": "objects",
-    "title": "Objects",
-    "description": "Sculptural pieces and everyday forms for grounded interiors.",
+    "id": "col-rituals",
+    "handle": "rituals",
+    "title": "Rituals",
+    "description": "Ceremony-ready pieces for tea, scent, and measured daily cadence.",
     "image": "/stores/store-b/placeholder.jpg",
-    "productHandles": ["meridian-vase", "horizon-tray"]
+    "productHandles": [
+      "stillwater-tea-set",
+      "ridge-incense-holder",
+      "cedar-serving-tray"
+    ]
   },
   {
-    "id": "col-textiles",
-    "handle": "textiles",
-    "title": "Textiles",
-    "description": "Soft layers and tactile weaves in balanced, neutral tones.",
+    "id": "col-rest",
+    "handle": "rest",
+    "title": "Rest",
+    "description": "Soft layers and grounded seating designed for pause and restoration.",
     "image": "/stores/store-b/placeholder.jpg",
-    "productHandles": ["lumen-throw"]
+    "productHandles": ["mossline-floor-cushion", "fernweave-throw"]
   }
 ]

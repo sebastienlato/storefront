@@ -19,7 +19,7 @@ export default async function CheckoutConfirmationPage() {
   return (
     <Section>
       <Container>
-        <CheckoutConfirmation commerce={config.commerce} />
+        <CheckoutConfirmation commerce={config.commerce} storeId={config.id} />
       </Container>
     </Section>
   );

@@ -1,66 +1,66 @@
 {
   "privacy": {
-    "title": "Privacy Policy",
-    "updated": "2024-01-15",
+    "title": "Privacy Notes",
+    "updated": "2024-02-20",
     "sections": [
       {
         "title": "Information we collect",
         "body": [
-          "We collect details you provide when placing an order or contacting the studio.",
-          "We also collect limited device data to improve performance and security."
+          "We collect details you share when you place an order or reach our care desk.",
+          "We also collect limited device data to maintain security and improve performance."
         ]
       },
       {
         "title": "How we use information",
         "body": [
-          "We use your information to process orders, provide support, and communicate updates.",
-          "We do not sell personal data."
+          "We use your information to fulfill orders, support care requests, and share updates.",
+          "We do not sell personal information."
         ]
       }
     ]
   },
   "terms": {
     "title": "Terms of Service",
-    "updated": "2024-01-15",
+    "updated": "2024-02-20",
     "sections": [
       {
         "title": "Orders",
         "body": [
-          "Orders are confirmed by email once payment is authorized.",
-          "We reserve the right to limit quantities for limited-release items."
+          "Orders are confirmed by email once payment authorization is complete.",
+          "We may limit quantities for small-batch releases to keep availability fair."
         ]
       },
       {
         "title": "Returns",
         "body": [
           "Returns are accepted within 14 days of delivery for unused items.",
-          "Return shipping is the responsibility of the customer unless otherwise stated."
+          "Return shipping is the responsibility of the customer unless noted otherwise."
         ]
       }
     ]
   },
   "shipping": {
     "title": "Shipping",
-    "updated": "2024-01-15",
+    "updated": "2024-02-20",
     "sections": [
       {
         "title": "Delivery windows",
         "body": [
-          "Orders ship within 2-4 business days unless otherwise noted.",
+          "Orders ship within 2-4 business days unless a product page notes otherwise.",
           "International delivery timelines vary by destination."
         ]
       },
       {
         "title": "Tracking",
         "body": [
-          "Tracking details are shared once the order leaves the studio."
+          "Tracking details are shared once the order leaves our studio."
         ]
       }
     ]
   },
   "returns": {
     "title": "Returns",
-    "updated": "2024-01-15",
+    "updated": "2024-02-20",
     "sections": [
       {
         "title": "Return policy",

@@ -49,7 +49,7 @@ export function Header({ store }: HeaderProps) {
               >
                 {store.navigation.headerCta.label}
               </Button>
-              <CartBadge />
+              <CartBadge storeId={store.id} />
             </div>
           </div>
         ) : null}

@@ -26,7 +26,7 @@ const formatCurrency = (amount: number, currency?: string) => {
 };
 
 export function CartView({ products, commerce, storeId }: CartViewProps) {
-  const { items, updateQuantity, removeItem } = useCart();
+  const { items, updateQuantity, removeItem } = useCart(storeId);
   const resolvedItems = resolveCartItems(items, products);
   const subtotal = getCartSubtotal(resolvedItems);
   const currency = resolvedItems[0]?.product.price.currency;

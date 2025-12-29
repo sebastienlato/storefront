@@ -1,139 +1,139 @@
 {
   "home": {
     "seo": {
-      "title": "Verde | Grounded calm",
-      "description": "Luxury essentials for calm interiors and deliberate daily routines."
+      "title": "Sagefold | Slow green living",
+      "description": "Mindful essentials for serene spaces, rooted in natural texture and quiet ritual."
     },
     "blocks": [
       {
-        "id": "promo-note",
-        "type": "promo-banner",
-        "text": "Limited studio release: complimentary care kit with each order.",
-        "cta": {
-          "label": "View details",
-          "href": "/collections/objects"
-        }
-      },
-      {
         "id": "hero-main",
         "type": "hero",
-        "title": "Quiet objects, lasting presence.",
-        "subtitle": "A focused collection of refined essentials for serene, modern spaces.",
+        "title": "Green stillness for daily rituals.",
+        "subtitle": "Sagefold curates natural forms that soften a room and steady the day.",
         "cta": {
-          "label": "Explore the collection",
-          "href": "/collections/objects"
+          "label": "Enter the rituals",
+          "href": "/collections/rituals"
         },
         "image": "/stores/store-b/placeholder.jpg",
-        "imageAlt": "Curated objects on a neutral surface"
-      },
-      {
-        "id": "featured-collections",
-        "type": "featured-collections",
-        "title": "Curated collections",
-        "subtitle": "Small-batch releases organized for thoughtful interiors.",
-        "cta": {
-          "label": "Browse all",
-          "href": "/collections/objects"
-        },
-        "collectionHandles": ["objects", "textiles"]
-      },
-      {
-        "id": "features-core",
-        "type": "feature-grid",
-        "title": "Designed for everyday rituals",
-        "items": [
-          {
-            "title": "Natural materials",
-            "description": "Selected for texture, durability, and time-worn character."
-          },
-          {
-            "title": "Considered details",
-            "description": "Quiet forms and subtle finishes that elevate daily use."
-          },
-          {
-            "title": "Small-batch craft",
-            "description": "Limited runs shaped with attention to proportion and balance."
-          }
-        ]
+        "imageAlt": "Calm tabletop with botanical accents"
       },
       {
         "id": "trust-bar",
         "type": "trust-bar",
-        "title": "A considered experience",
+        "title": "A quiet promise in every parcel",
         "source": "store"
+      },
+      {
+        "id": "featured-collections",
+        "type": "featured-collections",
+        "title": "Curated paths",
+        "subtitle": "Two collections shaped around ritual and rest.",
+        "cta": {
+          "label": "Browse collections",
+          "href": "/collections/rituals"
+        },
+        "collectionHandles": ["rituals", "rest"]
+      },
+      {
+        "id": "features-core",
+        "type": "feature-grid",
+        "title": "Slow by design",
+        "items": [
+          {
+            "title": "Garden-toned palette",
+            "description": "Sage, moss, and deep green accents grounded in warm neutrals."
+          },
+          {
+            "title": "Tactile materials",
+            "description": "Linen, stone, and finished wood chosen for calm texture."
+          },
+          {
+            "title": "Measured forms",
+            "description": "Soft geometry that brings balance to shelves and tables."
+          }
+        ]
       },
       {
         "id": "image-strip",
         "type": "image-strip",
-        "title": "Spaces for slow living",
+        "title": "Rooms that exhale",
         "images": [
-          { "src": "/stores/store-b/placeholder.jpg", "alt": "Sunlit table setting" },
-          { "src": "/stores/store-b/placeholder.jpg", "alt": "Textured throws in neutral tones" },
-          { "src": "/stores/store-b/placeholder.jpg", "alt": "Ceramic vessels on shelving" }
+          { "src": "/stores/store-b/placeholder.jpg", "alt": "Steam rising from a tea set" },
+          { "src": "/stores/store-b/placeholder.jpg", "alt": "Linen cushion on a low bench" },
+          { "src": "/stores/store-b/placeholder.jpg", "alt": "Tray with incense and botanicals" }
         ]
       },
       {
         "id": "testimonials",
         "type": "testimonials",
-        "title": "Trusted by discerning spaces",
+        "title": "Quiet words from mindful spaces",
         "items": [
           {
-            "quote": "Every piece arrives with a sense of calm and permanence.",
-            "name": "Client Services Lead",
-            "role": "Design Studio"
+            "quote": "The collection settles our studio with a natural, calm rhythm.",
+            "name": "Studio Director",
+            "role": "Wellness Atelier"
           },
           {
-            "quote": "The materials feel substantial without being heavy.",
-            "name": "Hospitality Director",
-            "role": "Boutique Hotel"
+            "quote": "Each piece feels gentle, but the quality is unmistakable.",
+            "name": "Operations Lead",
+            "role": "Retreat House"
           }
         ]
       },
       {
+        "id": "promo-note",
+        "type": "promo-banner",
+        "text": "Seasonal ritual note: limited sage bundles with every tray order.",
+        "cta": {
+          "label": "See the ritual",
+          "href": "/collections/rituals"
+        }
+      },
+      {
         "id": "cta-section",
         "type": "cta-section",
-        "title": "Bring intention to every room",
-        "description": "Explore small-batch releases crafted for daily rituals and lasting calm.",
+        "title": "Create a slower corner",
+        "description": "Explore pieces that invite pause, breath, and gentle order.",
         "cta": {
-          "label": "Shop new arrivals",
-          "href": "/collections/objects"
+          "label": "Shop the calm",
+          "href": "/collections/rest"
         },
         "image": "/stores/store-b/placeholder.jpg",
-        "imageAlt": "A calm interior with layered textiles"
+        "imageAlt": "Soft light over a green-toned living space"
       }
     ]
   },
   "about": {
     "seo": {
-      "title": "About | Verde",
-      "description": "A modern studio focused on refined, enduring essentials."
+      "title": "Our Practice | Sagefold",
+      "description": "A quiet practice devoted to natural materials and grounded living."
     },
     "blocks": [
       {
         "id": "about-story",
         "type": "rich-text",
-        "title": "A studio for considered living",
+        "title": "Designs that breathe",
         "paragraphs": [
-          "Atelier curates pieces that are quiet in form yet rich in materiality.",
-          "Each collection is shaped to support daily rituals with balanced design and craft."
+          "Sagefold was born from a desire to soften modern spaces with natural calm.",
+          "We work with restrained forms and tactile materials to support daily rituals and rest."
         ]
       }
     ]
   },
   "contact": {
     "seo": {
-      "title": "Contact | Verde",
-      "description": "Connect with our studio for orders, product guidance, and care."
+      "title": "Care Desk | Sagefold",
+      "description": "Reach our care desk for orders, guidance, and ritual notes."
     },
     "blocks": [
       {
         "id": "contact-methods",
         "type": "contact",
-        "title": "We are here to help",
+        "title": "We are here with calm guidance",
         "methods": [
-          { "label": "Email", "value": "hello@verde.example" },
-          { "label": "Phone", "value": "+1 (555) 240-2190" },
-          { "label": "Studio Hours", "value": "Mon-Fri, 9am-6pm" }
+          { "label": "Email", "value": "hello@sagefold.co" },
+          { "label": "Phone", "value": "+1 (555) 318-8824" },
+          { "label": "Care Hours", "value": "Mon-Fri, 8am-6pm" }
         ]
       }
     ]

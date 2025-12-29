@@ -19,7 +19,11 @@ export default async function CheckoutPage() {
   return (
     <Section>
       <Container>
-        <CheckoutFlow products={products} commerce={config.commerce} />
+        <CheckoutFlow
+          products={products}
+          commerce={config.commerce}
+          storeId={config.id}
+        />
       </Container>
     </Section>
   );

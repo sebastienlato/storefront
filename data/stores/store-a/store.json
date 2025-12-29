@@ -56,8 +56,16 @@
       { "label": "Returns", "href": "/legal/returns" }
     ],
     "social": [
-      { "label": "Instagram", "href": "https://example.com/instagram", "icon": "instagram" },
-      { "label": "Pinterest", "href": "https://example.com/pinterest", "icon": "pinterest" }
+      {
+        "label": "Instagram",
+        "href": "https://www.instagram.com/",
+        "icon": "instagram"
+      },
+      {
+        "label": "Pinterest",
+        "href": "https://www.pinterest.com/",
+        "icon": "pinterest"
+      }
     ]
   },
   "trust": [
@@ -81,7 +89,10 @@
     "ctas": {
       "addToCart": { "label": "Add to cart", "successLabel": "Added ✓" },
       "checkout": { "label": "Checkout", "href": "/checkout" },
-      "continueShopping": { "label": "Continue shopping", "href": "/collections/objects" }
+      "continueShopping": {
+        "label": "Continue shopping",
+        "href": "/collections/objects"
+      }
     },
     "cart": {
       "title": "Your cart",

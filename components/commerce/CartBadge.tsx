@@ -4,8 +4,12 @@ import { useMemo } from "react";
 
 import { useCart } from "@/lib/commerce/cart-store";
 
-export function CartBadge() {
-  const { items } = useCart();
+export type CartBadgeProps = {
+  storeId: string;
+};
+
+export function CartBadge({ storeId }: CartBadgeProps) {
+  const { items } = useCart(storeId);
   const count = useMemo(
     () => items.reduce((total, item) => total + item.quantity, 0),
     [items]

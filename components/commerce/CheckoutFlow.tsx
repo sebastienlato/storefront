@@ -13,6 +13,7 @@ import type { Product, StoreConfig } from "@/lib/store/types";
 export type CheckoutFlowProps = {
   products: Product[];
   commerce: StoreConfig["commerce"];
+  storeId: string;
 };
 
 const formatCurrency = (amount: number, currency?: string) => {
@@ -26,9 +27,9 @@ const formatCurrency = (amount: number, currency?: string) => {
   }).format(amount);
 };
 
-export function CheckoutFlow({ products, commerce }: CheckoutFlowProps) {
+export function CheckoutFlow({ products, commerce, storeId }: CheckoutFlowProps) {
   const router = useRouter();
-  const { items, clear } = useCart();
+  const { items, clear } = useCart(storeId);
   const resolvedItems = useMemo(
     () => resolveCartItems(items, products),
     [items, products]
