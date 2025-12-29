@@ -71,6 +71,10 @@ export type StoreConfig = {
   theme: ThemeTokens;
   navigation: Navigation;
   trust: TrustItem[];
+  ui: {
+    cartLabel: string;
+    cartHref: string;
+  };
 };
 
 export type CallToAction = {

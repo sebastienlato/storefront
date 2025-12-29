@@ -76,6 +76,13 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
 
   assertArray(value.trust, "store.trust");
 
+  if (!isRecord(value.ui)) {
+    throw new Error("store.ui must be an object.");
+  }
+
+  assertString(value.ui.cartLabel, "store.ui.cartLabel");
+  assertString(value.ui.cartHref, "store.ui.cartHref");
+
   return value as StoreConfig;
 };
 

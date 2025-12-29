@@ -71,5 +71,9 @@
       "description": "Every piece includes maintenance notes for years of use.",
       "icon": "shield"
     }
-  ]
+  ],
+  "ui": {
+    "cartLabel": "Cart",
+    "cartHref": "/cart"
+  }
 }
