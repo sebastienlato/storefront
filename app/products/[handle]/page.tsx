@@ -48,7 +48,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
           </div>
           <ProductPurchasePanel
             product={product}
-            addToCartLabel={config.commerce.addToCartLabel}
+            addToCartLabel={config.commerce.ctas.addToCart.label}
           />
         </div>
       </Container>

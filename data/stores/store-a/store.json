@@ -78,6 +78,23 @@
     }
   ],
   "commerce": {
-    "addToCartLabel": "Add to cart"
+    "ctas": {
+      "addToCart": { "label": "Add to cart" },
+      "checkout": { "label": "Checkout", "href": "/checkout" },
+      "continueShopping": { "label": "Continue shopping", "href": "/collections/objects" }
+    },
+    "cart": {
+      "title": "Your cart",
+      "emptyTitle": "Your cart is empty",
+      "emptyDescription": "Explore the collection to find something considered.",
+      "subtotalLabel": "Subtotal",
+      "promoLabel": "Promo code",
+      "promoPlaceholder": "Enter code",
+      "promoApplyLabel": "Apply",
+      "quantityLabel": "Quantity",
+      "removeLabel": "Remove",
+      "decreaseLabel": "Decrease quantity",
+      "increaseLabel": "Increase quantity"
+    }
   }
 }

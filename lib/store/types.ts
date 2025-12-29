@@ -77,7 +77,26 @@ export type StoreConfig = {
   navigation: Navigation;
   trust: TrustItem[];
   commerce: {
-    addToCartLabel: string;
+    ctas: {
+      addToCart: {
+        label: string;
+      };
+      checkout: CallToAction;
+      continueShopping?: CallToAction;
+    };
+    cart: {
+      title: string;
+      emptyTitle: string;
+      emptyDescription?: string;
+      subtotalLabel: string;
+      promoLabel: string;
+      promoPlaceholder: string;
+      promoApplyLabel: string;
+      quantityLabel: string;
+      removeLabel: string;
+      decreaseLabel: string;
+      increaseLabel: string;
+    };
   };
 };
 

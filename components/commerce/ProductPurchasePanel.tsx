@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { Price } from "@/components/commerce/Price";
 import { VariantSelector } from "@/components/commerce/VariantSelector";
 import { Button } from "@/components/ui/Button";
+import { useCart } from "@/lib/commerce/cart-store";
 import type { Product, Variant } from "@/lib/store/types";
 
 export type ProductPurchasePanelProps = {
@@ -41,6 +42,7 @@ export function ProductPurchasePanel({
   const [selectedOptions, setSelectedOptions] = useState(() =>
     getInitialOptions(product.variants)
   );
+  const { addItem } = useCart();
 
   const selectedVariant = useMemo(
     () => resolveVariant(product.variants, selectedOptions),
@@ -66,9 +68,10 @@ export function ProductPurchasePanel({
         disabled={isDisabled}
         onClick={() => {
           if (!selectedVariant) return;
-          console.log("add-to-cart", {
+          addItem({
             productId: product.id,
             variantId: selectedVariant.id,
+            quantity: 1,
           });
         }}
       >

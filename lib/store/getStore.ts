@@ -89,7 +89,60 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
     throw new Error("store.commerce must be an object.");
   }
 
-  assertString(value.commerce.addToCartLabel, "store.commerce.addToCartLabel");
+  if (!isRecord(value.commerce.ctas)) {
+    throw new Error("store.commerce.ctas must be an object.");
+  }
+
+  if (!isRecord(value.commerce.ctas.addToCart)) {
+    throw new Error("store.commerce.ctas.addToCart must be an object.");
+  }
+
+  assertString(value.commerce.ctas.addToCart.label, "store.commerce.ctas.addToCart.label");
+
+  if (!isRecord(value.commerce.ctas.checkout)) {
+    throw new Error("store.commerce.ctas.checkout must be an object.");
+  }
+
+  assertString(value.commerce.ctas.checkout.label, "store.commerce.ctas.checkout.label");
+  assertString(value.commerce.ctas.checkout.href, "store.commerce.ctas.checkout.href");
+
+  if (value.commerce.ctas.continueShopping !== undefined) {
+    if (!isRecord(value.commerce.ctas.continueShopping)) {
+      throw new Error("store.commerce.ctas.continueShopping must be an object.");
+    }
+
+    assertString(
+      value.commerce.ctas.continueShopping.label,
+      "store.commerce.ctas.continueShopping.label"
+    );
+    assertString(
+      value.commerce.ctas.continueShopping.href,
+      "store.commerce.ctas.continueShopping.href"
+    );
+  }
+
+  if (!isRecord(value.commerce.cart)) {
+    throw new Error("store.commerce.cart must be an object.");
+  }
+
+  assertString(value.commerce.cart.title, "store.commerce.cart.title");
+  assertString(value.commerce.cart.emptyTitle, "store.commerce.cart.emptyTitle");
+
+  if (value.commerce.cart.emptyDescription !== undefined) {
+    assertString(
+      value.commerce.cart.emptyDescription,
+      "store.commerce.cart.emptyDescription"
+    );
+  }
+
+  assertString(value.commerce.cart.subtotalLabel, "store.commerce.cart.subtotalLabel");
+  assertString(value.commerce.cart.promoLabel, "store.commerce.cart.promoLabel");
+  assertString(value.commerce.cart.promoPlaceholder, "store.commerce.cart.promoPlaceholder");
+  assertString(value.commerce.cart.promoApplyLabel, "store.commerce.cart.promoApplyLabel");
+  assertString(value.commerce.cart.quantityLabel, "store.commerce.cart.quantityLabel");
+  assertString(value.commerce.cart.removeLabel, "store.commerce.cart.removeLabel");
+  assertString(value.commerce.cart.decreaseLabel, "store.commerce.cart.decreaseLabel");
+  assertString(value.commerce.cart.increaseLabel, "store.commerce.cart.increaseLabel");
 
   return value as StoreConfig;
 };
