@@ -7,16 +7,15 @@ import { Section } from "@/components/layout/Section";
 import { getStore } from "@/lib/store/getStore";
 
 type CollectionPageProps = {
-  params: { handle: string };
+  params: Promise<{ handle: string }>;
 };
 
 export const generateMetadata = async ({
   params,
 }: CollectionPageProps): Promise<Metadata> => {
+  const { handle } = await params;
   const { collections, config } = await getStore();
-  const collection = collections.find(
-    (item) => item.handle === params.handle
-  );
+  const collection = collections.find((item) => item.handle === handle);
 
   if (!collection) {
     return {
@@ -31,10 +30,9 @@ export const generateMetadata = async ({
 };
 
 export default async function CollectionPage({ params }: CollectionPageProps) {
+  const { handle } = await params;
   const { collections, products, config } = await getStore();
-  const collection = collections.find(
-    (item) => item.handle === params.handle
-  );
+  const collection = collections.find((item) => item.handle === handle);
 
   if (!collection) {
     notFound();

@@ -8,14 +8,15 @@ import { Section } from "@/components/layout/Section";
 import { getStore } from "@/lib/store/getStore";
 
 type ProductPageProps = {
-  params: { handle: string };
+  params: Promise<{ handle: string }>;
 };
 
 export const generateMetadata = async ({
   params,
 }: ProductPageProps): Promise<Metadata> => {
+  const { handle } = await params;
   const { products, config } = await getStore();
-  const product = products.find((item) => item.handle === params.handle);
+  const product = products.find((item) => item.handle === handle);
 
   if (!product) {
     return {
@@ -30,8 +31,9 @@ export const generateMetadata = async ({
 };
 
 export default async function ProductPage({ params }: ProductPageProps) {
+  const { handle } = await params;
   const { products, config } = await getStore();
-  const product = products.find((item) => item.handle === params.handle);
+  const product = products.find((item) => item.handle === handle);
 
   if (!product) {
     notFound();
