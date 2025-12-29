@@ -6,6 +6,7 @@ import type { CartLineItem } from "@/lib/commerce/cart";
 
 const STORAGE_KEY = "storefront.cart";
 
+const EMPTY_CART: CartLineItem[] = [];
 let items: CartLineItem[] = [];
 let loaded = false;
 const listeners = new Set<() => void>();
@@ -53,7 +54,7 @@ const getSnapshot = () => {
   return items;
 };
 
-const getServerSnapshot = () => [] as CartLineItem[];
+const getServerSnapshot = () => EMPTY_CART;
 
 const subscribe = (listener: () => void) => {
   listeners.add(listener);

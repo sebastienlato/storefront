@@ -80,6 +80,7 @@ export type StoreConfig = {
     ctas: {
       addToCart: {
         label: string;
+        successLabel: string;
       };
       checkout: CallToAction;
       continueShopping?: CallToAction;

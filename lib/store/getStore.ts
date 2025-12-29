@@ -98,6 +98,10 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
   }
 
   assertString(value.commerce.ctas.addToCart.label, "store.commerce.ctas.addToCart.label");
+  assertString(
+    value.commerce.ctas.addToCart.successLabel,
+    "store.commerce.ctas.addToCart.successLabel"
+  );
 
   if (!isRecord(value.commerce.ctas.checkout)) {
     throw new Error("store.commerce.ctas.checkout must be an object.");

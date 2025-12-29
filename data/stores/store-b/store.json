@@ -79,7 +79,7 @@
   ],
   "commerce": {
     "ctas": {
-      "addToCart": { "label": "Add to cart" },
+      "addToCart": { "label": "Add to cart", "successLabel": "Added ✓" },
       "checkout": { "label": "Checkout", "href": "/checkout" },
       "continueShopping": { "label": "Continue shopping", "href": "/collections/objects" }
     },

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Container } from "@/components/layout/Container";
+import { CartBadge } from "@/components/commerce/CartBadge";
 import { Button } from "@/components/ui/Button";
 import type { StoreConfig } from "@/lib/store/types";
 
@@ -40,13 +41,16 @@ export function Header({ store }: HeaderProps) {
         </div>
         {store.navigation.headerCta ? (
           <div className="flex items-center gap-3">
-            <Button
-              as={Link}
-              href={store.navigation.headerCta.href}
-              variant={store.navigation.headerCta.variant ?? "ghost"}
-            >
-              {store.navigation.headerCta.label}
-            </Button>
+            <div className="relative">
+              <Button
+                as={Link}
+                href={store.navigation.headerCta.href}
+                variant={store.navigation.headerCta.variant ?? "ghost"}
+              >
+                {store.navigation.headerCta.label}
+              </Button>
+              <CartBadge />
+            </div>
           </div>
         ) : null}
       </Container>

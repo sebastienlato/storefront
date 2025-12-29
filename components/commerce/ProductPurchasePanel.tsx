@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import { Price } from "@/components/commerce/Price";
 import { VariantSelector } from "@/components/commerce/VariantSelector";
@@ -11,6 +11,7 @@ import type { Product, Variant } from "@/lib/store/types";
 export type ProductPurchasePanelProps = {
   product: Product;
   addToCartLabel: string;
+  addToCartSuccessLabel: string;
 };
 
 const getInitialOptions = (variants: Variant[]) => {
@@ -38,11 +39,13 @@ const resolveVariant = (
 export function ProductPurchasePanel({
   product,
   addToCartLabel,
+  addToCartSuccessLabel,
 }: ProductPurchasePanelProps) {
   const [selectedOptions, setSelectedOptions] = useState(() =>
     getInitialOptions(product.variants)
   );
   const { addItem } = useCart();
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const selectedVariant = useMemo(
     () => resolveVariant(product.variants, selectedOptions),
@@ -50,6 +53,12 @@ export function ProductPurchasePanel({
   );
 
   const isDisabled = !selectedVariant || selectedVariant.inStock === false;
+
+  useEffect(() => {
+    if (!showSuccess) return;
+    const timeout = window.setTimeout(() => setShowSuccess(false), 1200);
+    return () => window.clearTimeout(timeout);
+  }, [showSuccess]);
 
   return (
     <div className="space-y-6">
@@ -73,9 +82,10 @@ export function ProductPurchasePanel({
             variantId: selectedVariant.id,
             quantity: 1,
           });
+          setShowSuccess(true);
         }}
       >
-        {addToCartLabel}
+        {showSuccess ? addToCartSuccessLabel : addToCartLabel}
       </Button>
     </div>
   );
