@@ -38,5 +38,43 @@
         ]
       }
     ]
+  },
+  "shipping": {
+    "title": "Shipping",
+    "updated": "2024-01-15",
+    "sections": [
+      {
+        "title": "Delivery windows",
+        "body": [
+          "Orders ship within 2-4 business days unless otherwise noted.",
+          "International delivery timelines vary by destination."
+        ]
+      },
+      {
+        "title": "Tracking",
+        "body": [
+          "Tracking details are shared once the order leaves the studio."
+        ]
+      }
+    ]
+  },
+  "returns": {
+    "title": "Returns",
+    "updated": "2024-01-15",
+    "sections": [
+      {
+        "title": "Return policy",
+        "body": [
+          "Returns are accepted within 14 days of delivery for unused items.",
+          "Return requests must include the original order number."
+        ]
+      },
+      {
+        "title": "Condition",
+        "body": [
+          "Items must be returned in original packaging and condition."
+        ]
+      }
+    ]
   }
 }

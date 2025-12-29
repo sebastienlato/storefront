@@ -284,6 +284,19 @@ const assertLegal = (value: unknown): LegalContent => {
     throw new Error("Legal content must be an object.");
   }
 
+  if (!isRecord(value.privacy)) {
+    throw new Error("legal.privacy must be an object.");
+  }
+  if (!isRecord(value.terms)) {
+    throw new Error("legal.terms must be an object.");
+  }
+  if (!isRecord(value.shipping)) {
+    throw new Error("legal.shipping must be an object.");
+  }
+  if (!isRecord(value.returns)) {
+    throw new Error("legal.returns must be an object.");
+  }
+
   return value as LegalContent;
 };
 

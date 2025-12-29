@@ -326,6 +326,22 @@ export type LegalContent = {
       body: string[];
     }[];
   };
+  shipping: {
+    title: string;
+    updated: string;
+    sections: {
+      title: string;
+      body: string[];
+    }[];
+  };
+  returns: {
+    title: string;
+    updated: string;
+    sections: {
+      title: string;
+      body: string[];
+    }[];
+  };
 };
 
 export type StoreDataset = {
