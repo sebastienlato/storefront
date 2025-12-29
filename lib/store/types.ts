@@ -97,6 +97,49 @@ export type StoreConfig = {
       decreaseLabel: string;
       increaseLabel: string;
     };
+    checkout: {
+      title: string;
+      steps: {
+        contact: string;
+        shipping: string;
+        payment: string;
+      };
+      contact: {
+        title: string;
+        emailLabel: string;
+        phoneLabel: string;
+      };
+      shipping: {
+        title: string;
+        firstNameLabel: string;
+        lastNameLabel: string;
+        addressLabel: string;
+        cityLabel: string;
+        postalLabel: string;
+        countryLabel: string;
+      };
+      payment: {
+        title: string;
+        description?: string;
+      };
+      summary: {
+        title: string;
+        subtotalLabel: string;
+        shippingLabel: string;
+        taxLabel: string;
+        totalLabel: string;
+      };
+      actions: {
+        nextLabel: string;
+        backLabel: string;
+      };
+      placeOrderLabel: string;
+      confirmation: {
+        title: string;
+        description?: string;
+        cta?: CallToAction;
+      };
+    };
   };
 };
 

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/Button";
+import { StoreImage } from "@/components/ui/StoreImage";
 import { getCartSubtotal, resolveCartItems } from "@/lib/commerce/cart";
 import { useCart } from "@/lib/commerce/cart-store";
 import type { Product, StoreConfig } from "@/lib/store/types";
@@ -11,6 +11,7 @@ import type { Product, StoreConfig } from "@/lib/store/types";
 export type CartViewProps = {
   products: Product[];
   commerce: StoreConfig["commerce"];
+  storeId: string;
 };
 
 const formatCurrency = (amount: number, currency?: string) => {
@@ -24,7 +25,7 @@ const formatCurrency = (amount: number, currency?: string) => {
   }).format(amount);
 };
 
-export function CartView({ products, commerce }: CartViewProps) {
+export function CartView({ products, commerce, storeId }: CartViewProps) {
   const { items, updateQuantity, removeItem } = useCart();
   const resolvedItems = resolveCartItems(items, products);
   const subtotal = getCartSubtotal(resolvedItems);
@@ -57,15 +58,14 @@ export function CartView({ products, commerce }: CartViewProps) {
               className="flex flex-col gap-6 rounded-[var(--radius-lg)] border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:flex-row"
             >
               <div className="relative h-40 w-full overflow-hidden rounded-[var(--radius-md)] bg-[var(--color-bg)] md:h-32 md:w-32">
-                {product.images[0] ? (
-                  <Image
-                    src={product.images[0]}
-                    alt={product.title}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 768px) 120px, 80vw"
-                  />
-                ) : null}
+                <StoreImage
+                  storeId={storeId}
+                  src={product.images[0]}
+                  alt={product.title}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 768px) 120px, 80vw"
+                />
               </div>
               <div className="flex-1 space-y-4">
                 <div className="space-y-2">

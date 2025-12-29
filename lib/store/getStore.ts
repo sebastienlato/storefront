@@ -144,6 +144,112 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
   assertString(value.commerce.cart.decreaseLabel, "store.commerce.cart.decreaseLabel");
   assertString(value.commerce.cart.increaseLabel, "store.commerce.cart.increaseLabel");
 
+  if (!isRecord(value.commerce.checkout)) {
+    throw new Error("store.commerce.checkout must be an object.");
+  }
+
+  assertString(value.commerce.checkout.title, "store.commerce.checkout.title");
+
+  if (!isRecord(value.commerce.checkout.steps)) {
+    throw new Error("store.commerce.checkout.steps must be an object.");
+  }
+
+  assertString(value.commerce.checkout.steps.contact, "store.commerce.checkout.steps.contact");
+  assertString(value.commerce.checkout.steps.shipping, "store.commerce.checkout.steps.shipping");
+  assertString(value.commerce.checkout.steps.payment, "store.commerce.checkout.steps.payment");
+
+  if (!isRecord(value.commerce.checkout.contact)) {
+    throw new Error("store.commerce.checkout.contact must be an object.");
+  }
+
+  assertString(value.commerce.checkout.contact.title, "store.commerce.checkout.contact.title");
+  assertString(value.commerce.checkout.contact.emailLabel, "store.commerce.checkout.contact.emailLabel");
+  assertString(value.commerce.checkout.contact.phoneLabel, "store.commerce.checkout.contact.phoneLabel");
+
+  if (!isRecord(value.commerce.checkout.shipping)) {
+    throw new Error("store.commerce.checkout.shipping must be an object.");
+  }
+
+  assertString(value.commerce.checkout.shipping.title, "store.commerce.checkout.shipping.title");
+  assertString(value.commerce.checkout.shipping.firstNameLabel, "store.commerce.checkout.shipping.firstNameLabel");
+  assertString(value.commerce.checkout.shipping.lastNameLabel, "store.commerce.checkout.shipping.lastNameLabel");
+  assertString(value.commerce.checkout.shipping.addressLabel, "store.commerce.checkout.shipping.addressLabel");
+  assertString(value.commerce.checkout.shipping.cityLabel, "store.commerce.checkout.shipping.cityLabel");
+  assertString(value.commerce.checkout.shipping.postalLabel, "store.commerce.checkout.shipping.postalLabel");
+  assertString(value.commerce.checkout.shipping.countryLabel, "store.commerce.checkout.shipping.countryLabel");
+
+  if (!isRecord(value.commerce.checkout.payment)) {
+    throw new Error("store.commerce.checkout.payment must be an object.");
+  }
+
+  assertString(value.commerce.checkout.payment.title, "store.commerce.checkout.payment.title");
+
+  if (value.commerce.checkout.payment.description !== undefined) {
+    assertString(
+      value.commerce.checkout.payment.description,
+      "store.commerce.checkout.payment.description"
+    );
+  }
+
+  if (!isRecord(value.commerce.checkout.summary)) {
+    throw new Error("store.commerce.checkout.summary must be an object.");
+  }
+
+  assertString(value.commerce.checkout.summary.title, "store.commerce.checkout.summary.title");
+  assertString(
+    value.commerce.checkout.summary.subtotalLabel,
+    "store.commerce.checkout.summary.subtotalLabel"
+  );
+  assertString(
+    value.commerce.checkout.summary.shippingLabel,
+    "store.commerce.checkout.summary.shippingLabel"
+  );
+  assertString(value.commerce.checkout.summary.taxLabel, "store.commerce.checkout.summary.taxLabel");
+  assertString(
+    value.commerce.checkout.summary.totalLabel,
+    "store.commerce.checkout.summary.totalLabel"
+  );
+
+  if (!isRecord(value.commerce.checkout.actions)) {
+    throw new Error("store.commerce.checkout.actions must be an object.");
+  }
+
+  assertString(value.commerce.checkout.actions.nextLabel, "store.commerce.checkout.actions.nextLabel");
+  assertString(value.commerce.checkout.actions.backLabel, "store.commerce.checkout.actions.backLabel");
+
+  assertString(value.commerce.checkout.placeOrderLabel, "store.commerce.checkout.placeOrderLabel");
+
+  if (!isRecord(value.commerce.checkout.confirmation)) {
+    throw new Error("store.commerce.checkout.confirmation must be an object.");
+  }
+
+  assertString(
+    value.commerce.checkout.confirmation.title,
+    "store.commerce.checkout.confirmation.title"
+  );
+
+  if (value.commerce.checkout.confirmation.description !== undefined) {
+    assertString(
+      value.commerce.checkout.confirmation.description,
+      "store.commerce.checkout.confirmation.description"
+    );
+  }
+
+  if (value.commerce.checkout.confirmation.cta !== undefined) {
+    if (!isRecord(value.commerce.checkout.confirmation.cta)) {
+      throw new Error("store.commerce.checkout.confirmation.cta must be an object.");
+    }
+
+    assertString(
+      value.commerce.checkout.confirmation.cta.label,
+      "store.commerce.checkout.confirmation.cta.label"
+    );
+    assertString(
+      value.commerce.checkout.confirmation.cta.href,
+      "store.commerce.checkout.confirmation.cta.href"
+    );
+  }
+
   return value as StoreConfig;
 };
 

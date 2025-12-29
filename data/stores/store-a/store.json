@@ -95,6 +95,49 @@
       "removeLabel": "Remove",
       "decreaseLabel": "Decrease quantity",
       "increaseLabel": "Increase quantity"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "steps": {
+        "contact": "Contact",
+        "shipping": "Shipping",
+        "payment": "Payment"
+      },
+      "contact": {
+        "title": "Contact details",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone (optional)"
+      },
+      "shipping": {
+        "title": "Shipping address",
+        "firstNameLabel": "First name",
+        "lastNameLabel": "Last name",
+        "addressLabel": "Address",
+        "cityLabel": "City",
+        "postalLabel": "Postal code",
+        "countryLabel": "Country"
+      },
+      "payment": {
+        "title": "Payment",
+        "description": "Secure checkout powered by our payment partner."
+      },
+      "summary": {
+        "title": "Order summary",
+        "subtotalLabel": "Subtotal",
+        "shippingLabel": "Shipping",
+        "taxLabel": "Tax",
+        "totalLabel": "Total"
+      },
+      "actions": {
+        "nextLabel": "Continue",
+        "backLabel": "Back"
+      },
+      "placeOrderLabel": "Place order",
+      "confirmation": {
+        "title": "Your order is confirmed",
+        "description": "We will send updates as your order moves through production and delivery.",
+        "cta": { "label": "Continue shopping", "href": "/collections/objects" }
+      }
     }
   }
 }

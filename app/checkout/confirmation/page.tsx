@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { CartView } from "@/components/commerce/CartView";
+import { CheckoutConfirmation } from "@/components/commerce/CheckoutConfirmation";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { getStore } from "@/lib/store/getStore";
@@ -9,21 +9,17 @@ export const generateMetadata = async (): Promise<Metadata> => {
   const { config } = await getStore();
 
   return {
-    title: `${config.commerce.cart.title} | ${config.brand.name}`,
+    title: `${config.commerce.checkout.confirmation.title} | ${config.brand.name}`,
   };
 };
 
-export default async function CartPage() {
-  const { products, config } = await getStore();
+export default async function CheckoutConfirmationPage() {
+  const { config } = await getStore();
 
   return (
     <Section>
       <Container>
-        <CartView
-          products={products}
-          commerce={config.commerce}
-          storeId={config.id}
-        />
+        <CheckoutConfirmation commerce={config.commerce} />
       </Container>
     </Section>
   );

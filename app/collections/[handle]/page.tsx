@@ -31,7 +31,7 @@ export const generateMetadata = async ({
 };
 
 export default async function CollectionPage({ params }: CollectionPageProps) {
-  const { collections, products } = await getStore();
+  const { collections, products, config } = await getStore();
   const collection = collections.find(
     (item) => item.handle === params.handle
   );
@@ -53,7 +53,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
             <p className="max-w-2xl">{collection.description}</p>
           ) : null}
         </div>
-        <ProductGrid products={collectionProducts} />
+        <ProductGrid products={collectionProducts} storeId={config.id} />
       </Container>
     </Section>
   );

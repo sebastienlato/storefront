@@ -40,7 +40,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
   return (
     <Section>
       <Container className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
-        <ProductGallery images={product.images} alt={product.title} />
+        <ProductGallery
+          images={product.images}
+          alt={product.title}
+          storeId={config.id}
+        />
         <div className="space-y-6">
           <div className="space-y-4">
             <h1>{product.title}</h1>
