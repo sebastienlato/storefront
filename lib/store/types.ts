@@ -57,6 +57,11 @@ export type Navigation = {
   header: NavItem[];
   footer: NavItem[];
   social?: SocialLink[];
+  headerCta?: {
+    label: string;
+    href: string;
+    variant?: "solid" | "ghost";
+  };
 };
 
 export type TrustItem = {
@@ -71,9 +76,8 @@ export type StoreConfig = {
   theme: ThemeTokens;
   navigation: Navigation;
   trust: TrustItem[];
-  ui: {
-    cartLabel: string;
-    cartHref: string;
+  commerce: {
+    addToCartLabel: string;
   };
 };
 

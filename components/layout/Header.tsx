@@ -38,11 +38,17 @@ export function Header({ store }: HeaderProps) {
             ))}
           </nav>
         </div>
-        <div className="flex items-center gap-3">
-          <Button as={Link} href={store.ui.cartHref} variant="ghost">
-            {store.ui.cartLabel}
-          </Button>
-        </div>
+        {store.navigation.headerCta ? (
+          <div className="flex items-center gap-3">
+            <Button
+              as={Link}
+              href={store.navigation.headerCta.href}
+              variant={store.navigation.headerCta.variant ?? "ghost"}
+            >
+              {store.navigation.headerCta.label}
+            </Button>
+          </div>
+        ) : null}
       </Container>
     </header>
   );

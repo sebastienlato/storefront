@@ -76,12 +76,20 @@ const assertStoreConfig = (value: unknown): StoreConfig => {
 
   assertArray(value.trust, "store.trust");
 
-  if (!isRecord(value.ui)) {
-    throw new Error("store.ui must be an object.");
+  if (value.navigation.headerCta !== undefined) {
+    if (!isRecord(value.navigation.headerCta)) {
+      throw new Error("store.navigation.headerCta must be an object.");
+    }
+
+    assertString(value.navigation.headerCta.label, "store.navigation.headerCta.label");
+    assertString(value.navigation.headerCta.href, "store.navigation.headerCta.href");
   }
 
-  assertString(value.ui.cartLabel, "store.ui.cartLabel");
-  assertString(value.ui.cartHref, "store.ui.cartHref");
+  if (!isRecord(value.commerce)) {
+    throw new Error("store.commerce must be an object.");
+  }
+
+  assertString(value.commerce.addToCartLabel, "store.commerce.addToCartLabel");
 
   return value as StoreConfig;
 };

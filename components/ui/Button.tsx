@@ -13,7 +13,7 @@ export function Button<T extends ElementType = "button">({
 }: ButtonProps<T>) {
   const Component = as ?? "button";
   const base =
-    "inline-flex items-center justify-center rounded-[var(--radius-pill)] px-5 py-2 text-sm uppercase tracking-[0.18em] transition duration-200";
+    "inline-flex items-center justify-center rounded-[var(--radius-pill)] px-5 py-2 text-sm uppercase tracking-[0.18em] transition duration-200 disabled:cursor-not-allowed disabled:opacity-60";
   const styles =
     variant === "solid"
       ? "bg-[var(--color-accent)] text-[var(--color-bg)] hover:bg-[var(--color-accent-muted)]"

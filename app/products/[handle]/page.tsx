@@ -1,0 +1,57 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+
+import { ProductGallery } from "@/components/commerce/ProductGallery";
+import { ProductPurchasePanel } from "@/components/commerce/ProductPurchasePanel";
+import { Container } from "@/components/layout/Container";
+import { Section } from "@/components/layout/Section";
+import { getStore } from "@/lib/store/getStore";
+
+type ProductPageProps = {
+  params: { handle: string };
+};
+
+export const generateMetadata = async ({
+  params,
+}: ProductPageProps): Promise<Metadata> => {
+  const { products, config } = await getStore();
+  const product = products.find((item) => item.handle === params.handle);
+
+  if (!product) {
+    return {
+      title: config.brand.name,
+    };
+  }
+
+  return {
+    title: product.metadata?.seoTitle ?? `${product.title} | ${config.brand.name}`,
+    description: product.metadata?.seoDescription ?? product.description,
+  };
+};
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const { products, config } = await getStore();
+  const product = products.find((item) => item.handle === params.handle);
+
+  if (!product) {
+    notFound();
+  }
+
+  return (
+    <Section>
+      <Container className="grid gap-10 md:grid-cols-[1.1fr_0.9fr]">
+        <ProductGallery images={product.images} alt={product.title} />
+        <div className="space-y-6">
+          <div className="space-y-4">
+            <h1>{product.title}</h1>
+            <p className="max-w-xl">{product.description}</p>
+          </div>
+          <ProductPurchasePanel
+            product={product}
+            addToCartLabel={config.commerce.addToCartLabel}
+          />
+        </div>
+      </Container>
+    </Section>
+  );
+}
